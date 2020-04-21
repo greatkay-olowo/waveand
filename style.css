@@ -30,8 +30,8 @@ html {
 }
 
 .subheader {
-  font-size: 2rem !important;
-  font-weight: 700;
+  font-family: var(--Bold-Font);
+  font-size: 1.5rem !important;
   margin: 0.7rem 0;
 }
 
@@ -127,7 +127,7 @@ body {
 
 .jumbotron {
   background-color: #fff;
-  padding: 0;
+  padding: 0px;
 }
 
 .hero-text {
@@ -181,15 +181,10 @@ body {
   color: #fff;
 }
 .partner {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
+  margin-bottom: 0rem;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
-}
 .partner-text {
   font-size: 0.8rem;
   font-family: var(--Bold-Font);
@@ -198,104 +193,77 @@ body {
   margin: 2rem 0rem 0.7rem;
 }
 
-.partner-img {
-  height: 1.6rem !important;
-  margin: 0.5rem 1rem;
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.partner-img:hover {
-  opacity: 0.9;
+.flex-item {
+  padding: 0px;
+  width: 100px;
+  /* height: 50px; */
+  margin: 0px;
+  line-height: 150px;
+  text-align: center;
 }
 
-.parter-icon {
-  height: 100%;
+.img {
+  width: 100%;
 }
-
 /* end of hero */
 
 /* about */
 .about {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 0;
+  background-color: var(--backgroungColor);
+  color: var(--secondaryColor);
+  font-family: var(--Regular-Font);
 }
 
-.box1 {
-  background-color: var(--boxColor1) !important;
-}
-.box2 {
-  background-color: var(--boxColor2) !important;
-}
-.box3 {
-  background-color: var(--boxColor3) !important;
-}
-.box4 {
-  background-color: var(--boxColor4) !important;
-}
-.box5 {
-  background-color: var(--boxColor5) !important;
+.learn-more-container {
+  margin: 1rem 0rem;
 }
 
-.box6 {
-  background-color: var(--boxColor6);
+.about-story {
+  border-top: 2px solid var(--secondaryColor) !important;
+  margin-bottom: 2.5rem;
 }
 
-.box {
-  margin: 0px !important;
-  padding: 20px;
-  border: 2px solid #000000;
-  min-height: 200px;
+.story-card-header {
+  font-family: var(--Bold-Font);
+  font-size: 1.2rem;
 }
 
-.number {
-  width: 20px;
-  height: 20px;
-  padding: 20px;
-  background-color: #fff;
-  margin: 5px;
-  margin-left: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  position: relative;
+.story-card-details {
+  font-size: 1rem;
+  color: rgb(27, 27, 27);
+  line-height: 1.4em;
 }
 
-.numbertext {
-  position: absolute;
-  top: 5%;
-  left: 10%;
-}
-
-.number1 {
-  color: var(--boxColor1);
-}
-.number2 {
-  color: var(--boxColor2);
-}
-.number3 {
-  color: var(--boxColor3);
-}
-.number4 {
-  color: var(--boxColor4);
-}
-.number5 {
-  color: var(--boxColor5);
-}
-.number6 {
-  color: var(--boxColor6);
-}
 /* end of about */
 /* contact */
 .contact-subheader {
   color: var(--secondaryColor);
+  margin: 0rem;
 }
 
 .team-subheader {
+  font-family: var(--Bold-Font);
   color: var(--secondaryColor);
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 
 .our-team-intro {
   color: var(--secondaryColor);
+}
+
+.contactus-text {
+  color: var(--secondaryColor);
+  font-family: var(--Bold-Font);
+  font-size: 2rem;
 }
 /* end of contact */
 /* team */
@@ -346,8 +314,13 @@ form {
   color: var(--secondaryColor);
 }
 
+.bold-label {
+  font-family: var(--Bold-Font);
+}
+
 input,
-textarea {
+textarea,
+select {
   border: 0 !important;
   border-bottom: 2px solid var(--secondaryColor) !important;
   border-radius: 0 !important;
@@ -370,6 +343,12 @@ textarea {
 
 .social-icon:hover {
   color: var(--boxColor1);
+}
+
+.social-footer {
+  background-color: var(--backgroungColor);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* media queries */
@@ -396,7 +375,6 @@ textarea {
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .jumbotron {
     margin: 0 100px !important;
-    margin-bottom: 100px !important;
   }
 
   .hero-intro {
@@ -404,7 +382,9 @@ textarea {
   }
 
   .jumbro-into-2 {
+    margin: 0 0.5em;
     font-size: 1.2rem !important;
+    opacity: 99%;
   }
 }
 
@@ -422,7 +402,9 @@ textarea {
 
   .jumbro-into-2 {
     font-size: 1rem !important;
+    font-weight: 600;
     margin-bottom: 5rem;
+    margin-top: 2rem;
     line-height: 1.7em;
   }
 }
