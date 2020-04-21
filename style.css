@@ -104,7 +104,7 @@ body {
 .try-us {
   font-family: var(--Regular-Font);
   border: none;
-  color: var(--secondaryColor);
+  color: var(--secondaryColor) !important;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
