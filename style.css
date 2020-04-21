@@ -27,7 +27,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--Regular-Font);
 }
 
 .subheader {
@@ -45,6 +44,8 @@ html {
 body {
   background-color: #fff;
   font: var(--Font);
+  text-decoration-line: none;
+  font-family: var(--Regular-Font);
   text-decoration: none;
 }
 /* end of global styles */
@@ -102,9 +103,10 @@ body {
 }
 
 .try-us {
+  text-decoration-line: none;
   font-family: var(--Regular-Font);
   border: none;
-  color: #fff !important;
+  color: var(--secondaryColor);
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
@@ -118,7 +120,9 @@ body {
 }
 
 .try-us:hover {
-  background-color: var(--boxColor1);
+  text-decoration-line: none;
+  background-color: var(--secondaryColor);
+  color: #fff;
 }
 /* end of header */
 /* hero */
@@ -160,6 +164,7 @@ body {
 }
 
 .learn-more {
+  text-decoration-line: none;
   border: none;
   font-family: var(--Regular-Font);
   padding: 15px 25px;
@@ -176,7 +181,9 @@ body {
 }
 
 .learn-more:hover {
+  text-decoration-line: none;
   background-color: var(--secondaryColor);
+  color: #fff;
 }
 .partner {
   margin: 2.5rem 0;
