@@ -89,7 +89,8 @@ body {
   padding-right: 0.7rem !important;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active {
   color: var(--secondaryColor) !important;
 }
 
