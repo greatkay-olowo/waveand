@@ -134,7 +134,7 @@ body {
 
 .jumbotrone-intro {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--Bold-Font);
   font-weight: bold;
 }
@@ -143,7 +143,7 @@ body {
   margin-top: 2rem;
   color: var(--secondaryColor);
   font-family: var(--Regular-Font);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
