@@ -104,19 +104,16 @@ body {
 }
 
 .try-us {
-  text-decoration-line: none;
   font-family: var(--Regular-Font);
-  border: none;
-  color: var(--secondaryColor);
   padding: 10px 15px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 0px;
   border: 2px solid var(--secondaryColor) !important;
   background-color: #fff;
+  color: var(--secondaryColor);
   transition: var(--transition);
 }
 
@@ -165,12 +162,9 @@ body {
 }
 
 .learn-more {
-  text-decoration-line: none;
-  border: none;
   font-family: var(--Regular-Font);
   padding: 15px 25px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   margin: 0 auto;
   cursor: pointer;
