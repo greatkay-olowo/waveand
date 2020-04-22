@@ -20,6 +20,18 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./assets/intlTelInput.css" />
+    <style>
+      .iti-flag {
+        background-image: url("./assets/img/flags.png");
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .iti-flag {
+            background-image: url("./assets/img/flags@2x.png");
+          }
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- nav -->
@@ -248,7 +260,11 @@
 
         <div class="row">
           <div class="col-lg-7">
-            <form class="mb-2">
+            <form
+              class="mb-2"
+              action="https://formspree.io/mbjrbbld"
+              method="POST"
+            >
               <div class="form-group">
                 <label for="full-name">Full Name</label>
                 <input
@@ -264,16 +280,24 @@
               </div>
 
               <div class="form-group">
-                <label for="tel">Phone Number</label>
-                <!-- <input type="tel" class="form-control" id="tel" /> -->
-                <div class="input-group mb-3">
+                <label for="tel" class="col-sm-12 phone-label" id="phone-label"
+                  >Phone Number</label
+                >
+                <div class="phone-wrapper">
+                  <input type="tel" class="form-control col-sm-12" id="tel" />
+                </div>
+
+                <!-- <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <button type="button" class="btn btn-outline-secondary">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary country-code"
+                    >
                       Action
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                      class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split drop"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -287,8 +311,6 @@
                       <li class="dropdown-item" href="#">
                         Something else here
                       </li>
-                      <div role="separator" class="dropdown-divider"></div>
-                      <li class="dropdown-item" href="#">Separated link</li>
                     </div>
                   </div>
                   <input
@@ -296,11 +318,14 @@
                     class="form-control"
                     aria-label="Text input with segmented dropdown button"
                   />
-                </div>
+                </div> -->
               </div>
               <div class="form-group">
                 <label for="service-option">Service Options</label>
-                <select class="form-control" id="service-option">
+                <select
+                  class="form-control browser-default"
+                  id="service-option"
+                >
                   <option value="">Select Services</option>
                   <option value="Project Monitoring">Project Monitoring</option>
                   <option value="Project Management">Project Management</option>
@@ -310,7 +335,13 @@
                   >
                   <option value="Work-Live Hubs">Work-Live Hubs</option>
                 </select>
-                <select class="form-control mt-3" id="service-option">
+                <label for="service-location" style="display: none;"
+                  >Service Options</label
+                >
+                <select
+                  class="form-control mt-3 browser-default"
+                  id="service-location"
+                >
                   <option value="">Select Location</option>
                   <option value="Yaba">Yaba</option>
                   <option value="Surulere">Surelere</option>
@@ -322,12 +353,16 @@
                   <option value="Abuja">Abuja</option>
                   <option value="Other">Other</option>
                 </select>
-                <textarea
+                <label for="other-location" style="display: none;"
+                  >Service Options</label
+                >
+
+                <input
+                  type="text"
                   class="form-control mt-3"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
+                  id="other-location"
                   placeholder="Enter Location"
-                ></textarea>
+                />
               </div>
 
               <div class="form-group">
@@ -461,5 +496,14 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#tel");
+      const iti = window.intlTelInput(input, {
+        utilsScript: "./assets/utils.js",
+
+        // options here
+      });
+    </script>
   </body>
 </html>

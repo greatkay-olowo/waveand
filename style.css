@@ -351,6 +351,22 @@ select {
   margin-right: 0;
 }
 
+.country-code {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid var(--secondaryColor);
+}
+label {
+  margin-top: 0.5rem;
+}
+
+.drop {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid var(--secondaryColor);
+  border-left: 2px solid var(--secondaryColor);
+  border-right: 2px solid var(--secondaryColor);
+}
 /* media queries */
 /* media queries */
 /* media queries */
@@ -407,4 +423,29 @@ select {
     margin-top: 2rem;
     line-height: 1.7em;
   }
+}
+.iti__flag {
+  background-image: url("path/to/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("path/to/flags@2x.png");
+  }
+}
+
+#tel {
+  border: none !important;
+  width: 100% !important;
+}
+
+.phone-wrapper {
+  border-bottom: 2px solid var(--secondaryColor);
+  margin: 0;
+  padding: 0;
+}
+
+.phone-label {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
