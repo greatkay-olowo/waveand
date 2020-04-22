@@ -32,14 +32,14 @@ html {
 
 .subheader {
   font-family: var(--Bold-Font);
-  font-size: 1.5rem !important;
-  margin: 0.7rem 0;
+  font-size: 1.5em !important;
+  margin: 0.7em 0;
 }
 
 .intro {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem !important;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em !important;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 
 /* partners
 .partner {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .partners-intro {
@@ -63,8 +63,8 @@ body {
 }
 
 .partner-icon {
-  height: 4rem !important;
-  margin: 0.5rem;
+  height: 4em !important;
+  margin: 0.5em;
   border-radius: 5px;
   align-content: center;
 } */
@@ -75,7 +75,7 @@ body {
 
 .navbar {
   /* background-color: white !important; */
-  font-size: 1rem !important;
+  font-size: 1em !important;
 
   opacity: 98%;
   background-color: #fff !important;
@@ -84,10 +84,9 @@ body {
 .height {
   height: 100% !important;
 }
-
-.nav-link {
+nav .nav-link {
   color: #000 !important;
-  padding-right: 0.7rem !important;
+  padding-right: 0.7em !important;
 }
 
 .nav-link:hover,
@@ -96,7 +95,7 @@ body {
 }
 
 .nav-container {
-  margin: 0 2rem !important;
+  margin: 0 2em !important;
 }
 
 .logo-a {
@@ -109,7 +108,7 @@ body {
   padding: 10px 15px;
   text-align: center;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1em;
   cursor: pointer;
   border-radius: 0px;
   border: 2px solid var(--secondaryColor) !important;
@@ -136,22 +135,23 @@ body {
 }
 
 .jumbotrone-intro {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
+  margin-top: 1em;
+  font-size: 1.2em;
   font-family: var(--Bold-Font);
   font-weight: bold;
 }
 
 .jumbro-into-2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2em;
+  margin-bottom: 1em;
   color: var(--secondaryColor);
   font-family: var(--Regular-Font);
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .hero-intro {
   color: var(--secondaryColor);
+
   /* font-weight: 700; */
 }
 
@@ -159,7 +159,7 @@ body {
   width: 80%;
 
   /* margin: 0 auto !important;
-  padding: 2rem 0; */
+  padding: 2em 0; */
 }
 
 .learn-more {
@@ -182,16 +182,16 @@ body {
   color: #fff;
 }
 .partner {
-  margin: 2rem 0;
-  margin-bottom: 0rem;
+  margin: 2em 0;
+  margin-bottom: 0em;
 }
 
 .partner-text {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-family: var(--Bold-Font);
   font-weight: bold;
   color: var(--secondaryColor);
-  margin: 2rem 0rem 0.7rem;
+  margin: 2em 0em 0.7em;
 }
 
 .flex-container {
@@ -225,21 +225,21 @@ body {
 }
 
 .learn-more-container {
-  margin: 1rem 0rem;
+  margin: 1em 0em;
 }
 
 .about-story {
   border-top: 2px solid var(--secondaryColor) !important;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5em;
 }
 
 .story-card-header {
   font-family: var(--Bold-Font);
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .story-card-details {
-  font-size: 1rem;
+  font-size: 1em;
   color: rgb(27, 27, 27);
   line-height: 1.4em;
 }
@@ -248,13 +248,13 @@ body {
 /* contact */
 .contact-subheader {
   color: var(--secondaryColor);
-  margin: 0rem;
+  margin: 0em;
 }
 
 .team-subheader {
   font-family: var(--Bold-Font);
   color: var(--secondaryColor);
-  margin-top: 1.3rem;
+  margin-top: 1.3em;
 }
 
 .our-team-intro {
@@ -264,19 +264,19 @@ body {
 .contactus-text {
   color: var(--secondaryColor);
   font-family: var(--Bold-Font);
-  font-size: 2rem;
+  font-size: 2em;
 }
 /* end of contact */
 /* team */
 /* .team {
   color: white;
   background-color: #f2f2f2;
-  padding: 1.5rem 0;
+  padding: 1.5em 0;
   margin: 0 auto !important;
 }
 
 .team-subheader {
-  padding-top: 111rem 0 !important;
+  padding-top: 111em 0 !important;
 }
 .card {
   margin: 0 auto;
@@ -296,7 +296,7 @@ body {
 }
 
 .fa-linkedin-in {
-  font-size: 2rem !important;
+  font-size: 2em !important;
   margin: 0;
 } */
 /* end of team */
@@ -329,16 +329,16 @@ select {
 
 .contact-info {
   font-family: var(--Font);
-  padding-top: 1rem !important;
+  padding-top: 1em !important;
   padding-left: 0;
   color: var(--secondaryColor) !important;
-  margin: 1rem 0 !important;
-  font-size: 1.2rem;
+  margin: 1em 0 !important;
+  font-size: 1.2em;
 }
 
 .social-icon {
   font-family: var(--Font);
-  font-size: 2rem;
+  font-size: 2em;
   color: var(--secondaryColor);
 }
 
@@ -352,13 +352,29 @@ select {
   margin-right: 0;
 }
 
+.phone {
+  border: none !important;
+  width: 100% !important;
+}
+
+.phone-wrapper {
+  border-bottom: 2px solid var(--secondaryColor);
+  margin: 0;
+  padding: 0;
+}
+
+.phone-label {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
 .country-code {
   border-radius: 0;
   border: 0;
   border-bottom: 2px solid var(--secondaryColor);
 }
 label {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
 }
 
 .drop {
@@ -377,15 +393,15 @@ label {
 @media only screen and (min-width: 748px) {
   .jumbotron-img {
     padding: 0 !important;
-    padding-bottom: 1rem !important;
+    padding-bottom: 1em !important;
   }
   .display-6 {
-    font-size: 0.8rem !important;
+    font-size: 0.8em !important;
     line-height: 40px !important;
-    font-size: 2.5rem !important;
+    font-size: 2.5em !important;
   }
   .img-div {
-    margin-top: 1rem;
+    margin-top: 1em;
   }
 }
 /* big laptops */
@@ -395,12 +411,12 @@ label {
   }
 
   .hero-intro {
-    font-size: 2.2rem !important;
+    font-size: 2.2em !important;
   }
 
   .jumbro-into-2 {
-    margin: 0 0.5em;
-    font-size: 1.2rem !important;
+    margin: 0.5em;
+    font-size: 1.2em !important;
     opacity: 99%;
   }
 }
@@ -409,35 +425,52 @@ label {
 @media screen and (min-device-width: 768px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .jumbotron {
     margin: 0 70px !important;
-    padding-bottom: 1rem !important;
+    padding-bottom: 1em !important;
   }
 
   .hero-intro {
-    font-size: 1.8rem !important;
-    margin-top: 5rem;
+    font-size: 1.8em !important;
   }
 
   .jumbro-into-2 {
-    font-size: 1rem !important;
+    font-size: 1em !important;
     font-weight: 600;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin: 1.5em;
     line-height: 1.7em;
   }
 }
 
-.phone {
-  border: none !important;
-  width: 100% !important;
-}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .hero-intro {
+    font-size: 1.1em;
+    margin-top: 2em !important;
+  }
 
-.phone-wrapper {
-  border-bottom: 2px solid var(--secondaryColor);
-  margin: 0;
-  padding: 0;
-}
+  .jumbro-into-2 {
+    font-size: 0.9em;
+    margin: 1.5em;
+  }
 
-.phone-label {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
+  .try-us {
+    font-family: var(--Regular-Font);
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 0px;
+    background-color: #fff;
+    border: 2px solid var(--secondaryColor) !important;
+    color: var(--secondaryColor);
+    transition: var(--transition);
+  }
+
+  .flex-item {
+    width: 5em;
+    height: 5em;
+  }
+
+  .subheader {
+    font-family: 1em !important;
+  }
 }
