@@ -9,12 +9,8 @@
       href="./images/Icons Only.jpeg"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+
     <script
       src="https://kit.fontawesome.com/7b9638af0a.js"
       crossorigin="anonymous"
@@ -22,13 +18,15 @@
     <link rel="stylesheet" href="style.css" />
 
     <link rel="stylesheet" href="./assets/intlTelInput.css" />
+    <link rel="stylesheet" href="./assets//img/flags@2x.png" />
     <style>
-      .iti-flag {
-        background-image: url("./assets/img/flags.png");
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          .iti-flag {
-            background-image: url("./assets/img/flags@2x.png");
-          }
+      .iti__flag {
+        background-image: url("./assets//img/flags.png");
+      }
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .iti__flag {
+          background-image: url("./assets//img/flags@2x.png");
         }
       }
     </style>
@@ -275,7 +273,7 @@
                 />
               </div>
               <div class="form-group">
-                <label for="email">Email address</label>
+                <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" required />
               </div>
 
@@ -284,53 +282,25 @@
                   >Phone Number</label
                 >
                 <div class="phone-wrapper">
-                  <input type="tel" class="form-control col-sm-12" id="tel" />
-                </div>
-
-                <!-- <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary country-code"
-                    >
-                      Action
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split drop"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-
-                    <div class="dropdown-menu">
-                      <li class="dropdown-item" href="#">Action</li>
-                      <li class="dropdown-item" href="#">Another action</li>
-                      <li class="dropdown-item" href="#">
-                        Something else here
-                      </li>
-                    </div>
-                  </div>
                   <input
-                    type="text"
-                    class="form-control"
-                    aria-label="Text input with segmented dropdown button"
+                    type="tel"
+                    class="form-control col-sm-12 phone"
+                    id="phone"
                   />
-                </div> -->
+                </div>
               </div>
               <div class="form-group">
                 <label for="service-option">Service Options</label>
                 <select
                   class="form-control browser-default"
                   id="service-option"
+                  onchange="displayOption()"
                 >
                   <option value="">Select Services</option>
                   <option value="Project Monitoring">Project Monitoring</option>
                   <option value="Project Management">Project Management</option>
                   <option value="Home Ownership">Home Ownership</option>
-                  <option value="Real Estate Investment"
+                  <option id="option" value="Real Estate Investment"
                     >Real Estate Investment</option
                   >
                   <option value="Work-Live Hubs">Work-Live Hubs</option>
@@ -339,8 +309,10 @@
                   >Service Options</label
                 >
                 <select
+                  style="display: none;"
                   class="form-control mt-3 browser-default"
                   id="service-location"
+                  onchange="displayOtherLocationOption()"
                 >
                   <option value="">Select Location</option>
                   <option value="Yaba">Yaba</option>
@@ -356,23 +328,31 @@
                 <label for="other-location" style="display: none;"
                   >Service Options</label
                 >
-
                 <input
                   type="text"
                   class="form-control mt-3"
                   id="other-location"
                   placeholder="Enter Location"
+                  style="display: none;"
                 />
               </div>
-
+              <div class="form-group">
+                <label for="start-date">How Soon Do You Want to Start?</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="start-date"
+                  required
+                />
+              </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1"
-                  >What other services do you want?</label
+                  >What Other Services Do You Want?</label
                 >
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
-                  rows="3"
+                  rows="2"
                 ></textarea>
               </div>
               <input
@@ -491,19 +471,47 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/intlTelInput.min.js"></script>
-    <script>
-      const input = document.querySelector("#tel");
-      const iti = window.intlTelInput(input, {
-        utilsScript: "./assets/utils.js",
 
+    <script src="./assets/bootstrap.min.js"></script>
+    <script src="assets/intlTelInput.min.js"></script>
+
+    <!-- telephone code and flag code -->
+    <script>
+      var input = document.querySelector("#phone");
+      var iti = window.intlTelInput(input, {
+        initialCountry: "ng",
+        nationalMode: true,
+        utilsScript: "./assets/utils.js",
         // options here
       });
+    </script>
+
+    <!-- code for form display conditions -->
+    <script>
+      // show service location
+      const displayOption = () => {
+        const serviceOption = document.querySelector("#service-option").value;
+        const serviceLocation = document.querySelector("#service-location");
+
+        if (serviceOption == "Work-Live Hubs") {
+          serviceLocation.style.display = "";
+        } else {
+          serviceLocation.style.display = "none";
+        }
+      };
+
+      // show other location
+      const displayOtherLocationOption = () => {
+        const serviceLocation = document.querySelector("#service-location")
+          .value;
+        const otherLocation = document.querySelector("#other-location");
+
+        if (serviceLocation == "Other") {
+          otherLocation.style.display = "";
+        } else {
+          otherLocation.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>

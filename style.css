@@ -424,17 +424,8 @@ label {
     line-height: 1.7em;
   }
 }
-.iti__flag {
-  background-image: url("path/to/flags.png");
-}
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .iti__flag {
-    background-image: url("path/to/flags@2x.png");
-  }
-}
-
-#tel {
+.phone {
   border: none !important;
   width: 100% !important;
 }
