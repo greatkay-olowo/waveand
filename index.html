@@ -325,11 +325,13 @@
                   id="service-option"
                   onchange="displayOption()"
                 >
-                  <option>Select Services</option>
-                  <option>Project Monitoring</option>
-                  <option>Project Management</option>
-                  <option>Home Ownership</option>
-                  <option id="option">Real Estate Investment</option>
+                  <option value="" disabled>Select Services</option>
+                  <option value="Project Monitoring">Project Monitoring</option>
+                  <option value="Project Management">Project Management</option>
+                  <option value="Home Ownership">Home Ownership</option>
+                  <option id="option" value="Real Estate Investment"
+                    >Real Estate Investment</option
+                  >
                   <option value="Work-Live Hubs">Work-Live Hubs</option>
                 </select>
                 <label for="service-location" style="display: none;"
@@ -341,7 +343,7 @@
                   id="service-location"
                   onchange="displayOtherLocationOption()"
                 >
-                  <option value="">Select Location</option>
+                  <option value="" disabled>Select Location</option>
                   <option value="Yaba">Yaba</option>
                   <option value="Surulere">Surelere</option>
                   <option value="Lekki">Lekki</option>
@@ -473,7 +475,7 @@
         </div>
       </div>
     </footer>
-    <footer class="footer mt-auto pt-1 pb-1 text-center social-footer">
+    <footer class="footer mt-auto p2-1 pb-1 text-center pt-2 social-footer">
       <a href="" target="_blank" class="col-sm-2 col-form-label social-icon"
         ><i class="fab fa-twitter"></i
       ></a>
