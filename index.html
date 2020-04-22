@@ -30,6 +30,35 @@
         }
       }
     </style>
+    <script>
+      // show service location
+      const displayOption = () => {
+        const serviceOption = document.querySelector("#service-option").value;
+        const serviceLocation = document.querySelector("#service-location");
+
+        if (serviceOption == "Work-Live Hubs") {
+          serviceLocation.style.display = "";
+        } else {
+          serviceLocation.style.display = "none";
+          const a = document.querySelector("#other-location");
+          a.style.display = "none";
+          a.value = "";
+        }
+      };
+
+      // show other location
+      const displayOtherLocationOption = () => {
+        const serviceLocation = document.querySelector("#service-location")
+          .value;
+        const otherLocation = document.querySelector("#other-location");
+
+        if (serviceLocation == "Other") {
+          otherLocation.style.display = "";
+        } else {
+          otherLocation.style.display = "none";
+        }
+      };
+    </script>
   </head>
   <body>
     <!-- nav -->
@@ -487,31 +516,5 @@
     </script>
 
     <!-- code for form display conditions -->
-    <script>
-      // show service location
-      const displayOption = () => {
-        const serviceOption = document.querySelector("#service-option").value;
-        const serviceLocation = document.querySelector("#service-location");
-
-        if (serviceOption == "Work-Live Hubs") {
-          serviceLocation.style.display = "";
-        } else {
-          serviceLocation.style.display = "none";
-        }
-      };
-
-      // show other location
-      const displayOtherLocationOption = () => {
-        const serviceLocation = document.querySelector("#service-location")
-          .value;
-        const otherLocation = document.querySelector("#other-location");
-
-        if (serviceLocation == "Other") {
-          otherLocation.style.display = "";
-        } else {
-          otherLocation.style.display = "none";
-        }
-      };
-    </script>
   </body>
 </html>
